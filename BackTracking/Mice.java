@@ -8,7 +8,7 @@ I use solution matrix for finding the path... i make it (x,y)=1 if it valid path
 else (x,y)=0;
 */
 public class Mice {
-    static int[][] grid = { { 0, 1, 0, 0 }, { 0, 0, 1, 0 }, { 1, 0, 0, 0 }, { 1, 1, 1, 0 } };
+    static int[][] grid = { { 0, 1, 0, 0 }, { 0, 0, 1, 0 }, { 1, 0, 0, 1 }, { 1, 0, 0, 0 } };
 
     static boolean findPath(int n, int x, int y, int[][] soln) {
         // Goal
@@ -18,7 +18,7 @@ public class Mice {
         }
 
         // validity
-        if (x < n && y < n && grid[x][y] == 1)
+        if (x >=n || y >= n || grid[x][y] == 1)
             return false;
 
         // backtracking
@@ -31,7 +31,7 @@ public class Mice {
         if (findPath(n, x, y + 1, soln))
             return true;
 
-        soln[x][y] = 1;
+        soln[x][y] = 0;
 
         return false;
     }
