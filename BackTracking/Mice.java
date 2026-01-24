@@ -4,7 +4,7 @@ starting point (0,0)
 Destination point (n-1,n-1);
 constraint : The Mice moves down or right
 
-I use soln matrix for finding the path... i make it (x,y)=1 if it valid path, 
+I use solution matrix for finding the path... i make it (x,y)=1 if it valid path, 
 else (x,y)=0;
 */
 public class Mice {
