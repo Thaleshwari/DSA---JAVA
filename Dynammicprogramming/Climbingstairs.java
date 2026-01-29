@@ -11,7 +11,7 @@ public class Climbingstairs {
         return dp[n];
     }
     public static void main(String[] args){
-        int n=5;
+        int n=10;
        int ans= climbStairs(n);
        System.out.println(ans);
 
