@@ -32,7 +32,7 @@ public class TargetSum {
         //exclude
         if(findTargetSum(arr, target, index+1, sum))
         return true;
-
+                                                                                                                                                            `
         return false;
 
     }

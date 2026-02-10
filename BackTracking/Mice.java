@@ -18,7 +18,7 @@ public class Mice {
         }
 
         // validity
-        if (x >=n || y >= n || grid[x][y] == 1)
+        if (x >=n || y >=n || grid[x][y] == 1)
             return false;
 
         // backtracking

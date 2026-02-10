@@ -27,13 +27,13 @@ public class KnapSack {
                 }
             }
         }
-        return dp[n][W];
+        return dp[4][6];
     }
 
     public static void main(String[] args) {
-        int W = 5;
-        int[] wt = {1, 2, 3};
-        int[] val = {2, 4, 5};
+        int W = 7;
+        int[] wt = {1, 3,4,7};
+        int[] val = {1,4,5,7};
 
         int result = knapsack(W, val, wt);
         System.out.println("Maximum value in Knapsack = " + result);
